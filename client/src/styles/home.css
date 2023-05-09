@@ -1,0 +1,297 @@
+.home {
+  background-color: #2e2e2e;
+}
+
+/*Entry page*/
+.entry {
+  width: 100%;
+  height: 90vh;
+  background-color: #355c7d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 15px 10px -15px #111;
+}
+
+.entry > h1 {
+  color: aliceblue;
+  font-size: 120px;
+  letter-spacing: 4px;
+}
+
+.entry > h4 {
+  color: aliceblue;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+.wrapper1 {
+  height: 200%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20vh;
+  padding-bottom: 20rem;
+}
+
+.first {
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  border-radius: 10px;
+  margin-top: 5rem;
+}
+
+.second {
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  border-radius: 10px;
+  margin-top: 15%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.third {
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+
+  margin-top: 15%;
+  margin-bottom: 15%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.text {
+  color: #f1f1f1;
+  font-size: 50px;
+  line-gap-override: 2px;
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+}
+
+.wrapper2 {
+  height: 150%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20vh;
+}
+
+.fifth {
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.sixth {
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  border-radius: 10px;
+  margin-top: 10%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.text2 {
+  color: #f1f1f1;
+  margin-top: 10%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+}
+
+.seventh {
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  border-radius: 10px;
+  margin-top: 10%;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+/* Scrolling mouse*/
+@-webkit-keyframes scroll-inner {
+  from {
+    margin-top: 15%;
+  }
+
+  to {
+    margin-top: 50%;
+  }
+}
+
+@keyframes scroll-inner {
+  from {
+    margin-top: 15%;
+  }
+
+  to {
+    margin-top: 50%;
+  }
+}
+
+@-webkit-keyframes scroll-mouse {
+  from {
+    margin-top: 0;
+  }
+
+  to {
+    margin-top: 15px;
+  }
+}
+
+@keyframes scroll-mouse {
+  from {
+    margin-top: 0;
+  }
+
+  to {
+    margin-top: 15px;
+  }
+}
+
+div.mouse-container {
+  position: relative;
+  display: block;
+  /* border:solid 1px red; */
+  height: 100px;
+}
+
+div.mouse {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 50px;
+  height: 80px;
+  border: solid 2px #fff;
+  border-radius: 25px;
+  -webkit-animation: scroll-mouse 1.5s;
+  animation: scroll-mouse 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.mouse span.scroll-down {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 15% auto auto auto;
+
+  -webkit-animation: scroll-inner 1.5s;
+  animation: scroll-inner 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+@media only screen and (max-width: 700px) {
+  .entry > h1 {
+    color: aliceblue;
+    font-size: 95px;
+    letter-spacing: 4px;
+    text-align: center;
+  }
+
+  .first {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 20px;
+    margin-top: 1rem;
+    justify-content: end;
+    padding: 0;
+  }
+
+  .first > div {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .first > div > h1 {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .second {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 1rem;
+    justify-content: end;
+    padding: 0;
+    text-align: center;
+  }
+
+  .third > h1 {
+    font-size: 25px;
+  }
+
+  .text {
+    font-size: 30px;
+  }
+  .wrapper1 {
+    padding-bottom: 150px;
+  }
+  .fourth {
+    padding-left: 6rem;
+    align-items: flex-start;
+  }
+  .fourth h2 {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+    letter-spacing: normal;
+  }
+
+  .fifth {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sixth {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+  .sixth .connect {
+    width: 160px;
+    padding-right: 20px;
+    margin: 0;
+  }
+
+  .text2 {
+    font-size: 28px;
+  }
+
+  .seventh div h2 {
+    font-size: 30px;
+  }
+}
